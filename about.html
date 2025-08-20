@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - GoCode</title>
+    <meta name="description" content="Learn about GoCode and our mission">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0idXJsKCNncmFkaWVudCkiLz4KPHRldCB4PSI4IiB5PSIyMCIgZm9udC1mYW1pbHk9IkludGVyIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkc8L3RleHQ+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCIgeTE9IjAiIHgyPSIzMiIgeTI9IjMyIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzFBNzNFOCIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGQkMwMkQiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="min-h-screen">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar">
+            <!-- Logo -->
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">G</div>
+                    <span class="logo-text">GoCode</span>
+                </div>
+            </div>
+
+                   <!-- Navigation -->
+                   <nav class="sidebar-nav">
+                    <a href="home.html" class="nav-item active">
+                        <i data-lucide="home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="courses.html" class="nav-item">
+                        <i data-lucide="book-open"></i>
+                        <span>Books</span>
+                    </a>
+                    <a href="about.html" class="nav-item">
+                        <i data-lucide="info"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="contact.html" class="nav-item">
+                        <i data-lucide="mail"></i>
+                        <span>Contact</span>
+                    </a>    
+                <!-- New Button -->
+                <button class="nav-item modern-button" id="new-action-button">
+                    <i data-lucide="plus-circle"></i>
+                    <span>New Action</span>
+                </button>
+            </nav>
+            
+            <!-- Settings -->
+            <div class="sidebar-footer">
+                <button class="nav-item" id="settings-button">
+                    <i data-lucide="settings"></i>
+                    <span>Settings</span>
+                </button>
+                <button class="nav-item modern-button" id="new-feature-button">
+                    <i data-lucide="star"></i>
+                    <span>New Feature</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top App Bar -->
+            <header class="app-header">
+                <!-- Search -->
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" placeholder="Search courses, topics..." class="search-input">
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="header-actions">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="icon-button">
+                        <i data-lucide="sun" class="theme-icon light-icon"></i>
+                        <i data-lucide="moon" class="theme-icon dark-icon"></i>
+                    </button>
+
+                    <!-- User Menu -->
+                    <div class="user-menu">
+                        <button id="auth-button" class="auth-button">Sign In</button>
+                        <div id="user-profile" class="user-profile hidden">
+                            <div class="user-avatar">
+                                <span id="user-first-name">J</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <main id="page-content" class="page-content">
+                <!-- About Page -->
+                <div id="about-page" class="page active">
+                    <div class="page-header">
+                        <div class="container">
+                            <div class="page-badge">About GoCode</div>
+                            <h1 class="page-title">Empowering the Next Generation of Programmers</h1>
+                            <p class="page-description">
+                                GoCode is dedicated to providing world-class programming education that bridges the gap between academic learning and industry requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <!-- Mission & Vision -->
+                        <section class="about-section">
+                            <div class="about-grid">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            <i data-lucide="target"></i>
+                                            Our Mission
+                                        </h3>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>To democratize programming education by providing accessible, high-quality courses that prepare students for successful careers in technology.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            <i data-lucide="eye"></i>
+                                            Our Vision
+                                        </h3>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>To become the leading platform for programming education, recognized for our innovative teaching methods and exceptional student outcomes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Values -->
+                        <section class="values-section">
+                            <div class="section-header">
+                                <h2 class="section-title">Our Core Values</h2>
+                                <p class="section-description">The principles that guide everything we do at GoCode.</p>
+                            </div>
+                            <div class="values-grid">
+                                <div class="value-card">
+                                    <div class="value-icon">
+                                        <i data-lucide="target"></i>
+                                    </div>
+                                    <h4 class="value-title">Quality Education</h4>
+                                    <p class="value-description">We provide comprehensive, high-quality programming education that prepares students for real-world challenges.</p>
+                                </div>
+                                <div class="value-card">
+                                    <div class="value-icon">
+                                        <i data-lucide="users"></i>
+                                    </div>
+                                    <h4 class="value-title">Student-Centered</h4>
+                                    <p class="value-description">Our courses are designed with students in mind, focusing on practical skills and hands-on learning experiences.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

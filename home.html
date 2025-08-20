@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCode - Professional Programming Education Platform</title>
+    <meta name="description" content="Master programming with GoCode - Professional courses in C, Java, Data Structures, Operating Systems, and Computer Fundamentals">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0idXJsKCNncmFkaWVudCkiLz4KPHRldCB4PSI4IiB5PSIyMCIgZm9udC1mYW1pbHk9IkludGVyIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkc8L3RleHQ+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCIgeTE9IjAiIHgyPSIzMiIgeTI9IjMyIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzFBNzNFOCIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGQkMwMkQiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="min-h-screen">
+        <!-- Hamburger Menu Button -->
+        <button id="menu-toggle" class="menu-toggle">
+            <i data-lucide="menu"></i>
+        </button>
+
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar">
+            <!-- Back Button -->
+            <div class="sidebar-header">
+                <button id="back-button" class="back-button">
+                    &#9776; <!-- Three horizontal lines -->
+                </button>
+                <div class="logo">
+                    <div class="logo-icon">G</div>
+                    <span class="logo-text">GoCode</span>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+                <a href="home.html" class="nav-item">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="courses.html" class="nav-item">
+                    <i data-lucide="book-open"></i>
+                    <span>Books</span>
+                </a>
+                <a href="about.html" class="nav-item">
+                    <i data-lucide="info"></i>
+                    <span>About</span>
+                </a>
+                <a href="contact.html" class="nav-item">
+                    <i data-lucide="mail"></i>
+                    <span>Contact</span>
+                </a>
+            </nav>
+
+            <!-- Settings -->
+            <div class="sidebar-footer">
+                <button class="nav-item" id="settings-button">
+                    <i data-lucide="settings"></i>
+                    <span>Settings</span>
+                </button>
+                <button class="nav-item modern-button" id="new-feature-button">
+                    <i data-lucide="star"></i>
+                    <span>New Feature</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top App Bar -->
+            <header class="app-header">
+                <!-- Search -->
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" placeholder="Search courses, topics..." class="search-input">
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="header-actions">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="icon-button">
+                        <i data-lucide="sun" class="theme-icon light-icon"></i>
+                        <i data-lucide="moon" class="theme-icon dark-icon"></i>
+                    </button>
+
+                    <!-- User Menu -->
+                    <div class="user-menu">
+                        <button id="auth-button" class="auth-button">Sign In</button>
+                        <div id="user-profile" class="user-profile hidden">
+                            <div class="user-avatar">
+                                <span id="user-first-name">J</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <main id="page-content" class="page-content">
+                <!-- Home Page -->
+                <div id="home-page" class="page active">
+                    <!-- Hero Section -->
+                    <section class="hero-section">
+                        <div class="hero-content">
+                            <div class="hero-grid">
+                                <div class="hero-text">
+                                    <div class="hero-badge">🚀 Now with AI-powered learning assistance</div>
+                                    <h1 class="hero-title">
+                                        Master Programming with
+                                        <span class="hero-brand">GoCode</span>
+                                    </h1>
+                                    <p class="hero-description">
+                                        From C fundamentals to advanced algorithms, learn programming concepts that matter for your career in tech.
+                                    </p>
+                                    <div class="hero-actions">
+                                        <a href="courses.html" class="btn btn-primary">
+                                            Explore 
+                                            <i data-lucide="arrow-right"></i>
+                                        </a>
+                                        <a href="about.html" class="btn btn-outline">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="hero-image">
+                                    <img src="https://images.unsplash.com/photo-1562758778-e5638b5b6607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9ncmFtbWluZyUyMHN0dWRlbnQlMjBjb2Rpbmd8ZW58MXx8fHwxNzU1MjUzODMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Student coding" class="hero-img">
+                                    <div class="hero-feature-card">
+                                        <div class="feature-icon">
+                                            <i data-lucide="code"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <div class="feature-title">Interactive Coding</div>
+                                            <div class="feature-subtitle">Practice as you learn</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA Section -->
+                    <section class="cta-section">
+                        <div class="container">
+                            <div class="cta-content">
+                                <h2 class="cta-title">Ready to Start Your Journey?</h2>
+                                <p class="cta-description">
+                                    Join thousands of students who are already building their programming skills with GoCode.
+                                </p>
+                                <a href="courses.html" class="btn btn-secondary">
+                                    Get Started Today
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

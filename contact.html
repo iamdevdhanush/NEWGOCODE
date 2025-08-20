@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GoCode</title>
+    <meta name="description" content="Contact GoCode for more information">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg0iMzIiIGhlaWdodD0iMzIiIHJ4PSI4IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIvPgo8dGV4dCB4PSI4IiB5PSIyMCIgZm9udC1mYW1pbHk9IkludGVyIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkc8L3RleHQ+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCIgeTE9IjAiIHgyPSIzMiIgeTI9IjMyIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzFBNzNFOCIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGQkMwMkQiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="min-h-screen">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar">
+            <!-- Logo -->
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">G</div>
+                    <span class="logo-text">GoCode</span>
+                </div>
+            </div>
+
+                   <!-- Navigation -->
+                   <nav class="sidebar-nav">
+                    <a href="home.html" class="nav-item active">
+                        <i data-lucide="home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="courses.html" class="nav-item">
+                        <i data-lucide="book-open"></i>
+                        <span>Books</span>
+                    </a>
+                    <a href="about.html" class="nav-item">
+                        <i data-lucide="info"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="contact.html" class="nav-item">
+                        <i data-lucide="mail"></i>
+                        <span>Contact</span>
+                    </a>    
+                <!-- New Button -->
+                <button class="nav-item modern-button" id="new-action-button">
+                    <i data-lucide="plus-circle"></i>
+                    <span>New Action</span>
+                </button>
+            </nav>
+
+            <!-- Settings -->
+            <div class="sidebar-footer">
+                <button class="nav-item" id="settings-button">
+                    <i data-lucide="settings"></i>
+                    <span>Settings</span>
+                </button>
+                <button class="nav-item modern-button" id="new-feature-button">
+                    <i data-lucide="star"></i>
+                    <span>New Feature</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top App Bar -->
+            <header class="app-header">
+                <!-- Search -->
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" placeholder="Search courses, topics..." class="search-input">
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="header-actions">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="icon-button">
+                        <i data-lucide="sun" class="theme-icon light-icon"></i>
+                        <i data-lucide="moon" class="theme-icon dark-icon"></i>
+                    </button>
+
+                    <!-- User Menu -->
+                    <div class="user-menu">
+                        <button id="auth-button" class="auth-button">Sign In</button>
+                        <div id="user-profile" class="user-profile hidden">
+                            <div class="user-avatar">
+                                <span id="user-first-name">J</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <main id="page-content" class="page-content">
+                <!-- Contact Page -->
+                <div id="contact-page" class="page active">
+                    <div class="page-header">
+                        <div class="container">
+                            <div class="page-badge">Get in Touch</div>
+                            <h1 class="page-title">Contact Us</h1>
+                            <p class="page-description">
+                                Have questions about our courses? Need help with enrollment? Our team is here to help you succeed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="contact-grid">
+                            <!-- Contact Form -->
+                            <div class="contact-form-section">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            <i data-lucide="message-square"></i>
+                                            Send us a Message
+                                        </h3>
+                                        <p class="card-description">Fill out the form below and we'll get back to you as soon as possible.</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <form id="contact-form" class="contact-form">
+                                            <div class="form-row">
+                                                <div class="form-group">
+                                                    <label for="name">Full Name *</label>
+                                                    <input type="text" id="name" name="name" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Email Address *</label>
+                                                    <input type="email" id="email" name="email" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="subject">Subject *</label>
+                                                <input type="text" id="subject" name="subject" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message">Message *</label>
+                                                <textarea id="message" name="message" rows="6" required></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-full">
+                                                <i data-lucide="send"></i>
+                                                Send Message
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contact Info -->
+                            <div class="contact-info-section">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Contact Information</h3>
+                                        <p class="card-description">Multiple ways to reach our support team.</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i data-lucide="mail"></i>
+                                            </div>
+                                            <div class="contact-details">
+                                                <div class="contact-title">Email Us</div>
+                                                <div class="contact-value">support@gocode.edu</div>
+                                                <div class="contact-description">We'll respond within 24 hours</div>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i data-lucide="phone"></i>
+                                            </div>
+                                            <div class="contact-details">
+                                                <div class="contact-title">Call Us</div>
+                                                <div class="contact-value">+1 (555) 123-4567</div>
+                                                <div class="contact-description">Mon-Fri 9AM-6PM EST</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

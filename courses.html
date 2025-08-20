@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - GoCode</title>
+    <meta name="description" content="Browse our programming courses at GoCode">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0idXJsKCNncmFkaWVudCkiLz4KPHRldCB4PSI4IiB5PSIyMCIgZm9udC1mYW1pbHk9IkludGVyIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkc8L3RleHQ+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCIgeTE9IjAiIHgyPSIzMiIgeTI9IjMyIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzFBNzNFOCIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGQkMwMkQiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="min-h-screen">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar">
+            <!-- Logo -->
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">G</div>
+                    <span class="logo-text">GoCode</span>
+                </div>
+            </div>
+
+              <!-- Navigation -->
+              <nav class="sidebar-nav">
+                <a href="home.html" class="nav-item active">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="courses.html" class="nav-item">
+                    <i data-lucide="book-open"></i>
+                    <span>Books</span>
+                </a>
+                <a href="about.html" class="nav-item">
+                    <i data-lucide="info"></i>
+                    <span>About</span>
+                </a>
+                <a href="contact.html" class="nav-item">
+                    <i data-lucide="mail"></i>
+                    <span>Contact</span>
+                </a>    
+            <!-- New Button -->
+            <button class="nav-item modern-button" id="new-action-button">
+                <i data-lucide="plus-circle"></i>
+                <span>New Action</span>
+            </button>
+        </nav>
+
+            <!-- Settings -->
+            <div class="sidebar-footer">
+                <button class="nav-item" id="settings-button">
+                    <i data-lucide="settings"></i>
+                    <span>Settings</span>
+                </button>
+                <button class="nav-item modern-button" id="new-feature-button">
+                    <i data-lucide="star"></i>
+                    <span>New Feature</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top App Bar -->
+            <header class="app-header">
+                <!-- Search -->
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" placeholder="Search courses, topics..." class="search-input">
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="header-actions">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="icon-button">
+                        <i data-lucide="sun" class="theme-icon light-icon"></i>
+                        <i data-lucide="moon" class="theme-icon dark-icon"></i>
+                    </button>
+
+                    <!-- User Menu -->
+                    <div class="user-menu">
+                        <button id="auth-button" class="auth-button">Sign In</button>
+                        <div id="user-profile" class="user-profile hidden">
+                            <div class="user-avatar">
+                                <span id="user-first-name">J</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    
+            <!-- Page Content -->
+            <main id="page-content" class="page-content">
+                <!-- Courses Page -->
+                <div id="courses-page" class="page active">
+                    <div class="page-header">
+                        <div class="container">
+                            <div class="page-header-content">
+                                <div class="page-badge">Courses</div>
+                                <h1 class="page-title">Programming Courses</h1>
+                                <p class="page-description">
+                                    Master essential programming skills with our comprehensive courses designed for students and professionals.
+                                </p>
+                            </div>
+                            
+                            <!-- Filters -->
+                            <div class="filters-container">
+                                <div class="search-filter">
+                                    <i data-lucide="search" class="search-icon"></i>
+                                    <input type="text" id="course-search" placeholder="Search courses..." class="filter-input">
+                                </div>
+                                <select id="category-filter" class="filter-select">
+                                    <option value="all">All Categories</option>
+                                    <option value="programming">Programming Languages</option>
+                                    <option value="computer-science">Computer Science</option>
+                                    <option value="fundamentals">Fundamentals</option>
+                                </select>
+                                <select id="difficulty-filter" class="filter-select">
+                                    <option value="all">All Levels</option>
+                                    <option value="beginner">1ST SEM</option>
+                                    <option value="intermediate">2ND SEM</option>
+                                    <option value="advanced">2ND SEM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div id="courses-grid" class="courses-grid">
+                            <!-- Courses will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
